@@ -394,7 +394,7 @@ void CDjVuView::OnDraw(CDC* pDC)
 				GRect rect = page.selection[pos]->rect;
 				CRect rcText = TranslatePageRect(nPage, rect);
 				//m_offscreenDC.InvertRect(rcText - ptScroll);
-				//make highlight selected text with red color
+				//Highlight selected/found text with red color.
 				HighlightRect(&m_offscreenDC, rcText - ptScroll, RGB(255, 0, 0), 0.40);
 			}
 
